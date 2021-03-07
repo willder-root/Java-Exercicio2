@@ -68,6 +68,7 @@ public class PlacaVideo {
     
     public void entradaDados(){
         Scanner entrada3 = new Scanner(System.in);
+        System.out.println("-------------------Placa Video---------------------");
         System.out.println("Marca.: ");
         setMarca(entrada3.nextLine());
         System.out.println("Modelo.: ");
@@ -75,8 +76,8 @@ public class PlacaVideo {
         System.out.println("Padrao.: ");
         setPadrao(entrada3.nextLine());
         System.out.println("Preço.: ");
-        setPreco(Integer.parseInt(entrada3.nextLine()));
-        entrada3.close();
+        setPreco(Double.parseDouble(entrada3.nextLine()));
+        //entrada3.close();
     }
     
     public void cadastrar(String marca, String modelo, String padrao,
@@ -88,6 +89,7 @@ public class PlacaVideo {
     }
     
     public void imprimir(){
+        System.out.println("-------------------Placa Video---------------------");
         System.out.println("Marca.: " + getMarca());
         System.out.println("Modelo.: " + getModelo()); 
         System.out.println("Padrão.: " + getPadrao());

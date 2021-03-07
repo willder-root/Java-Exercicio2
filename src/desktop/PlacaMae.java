@@ -67,6 +67,7 @@ public class PlacaMae {
     
     public void entradaDados(){
         Scanner sc = new Scanner(System.in);
+        System.out.println("-------------------Placa Mãe---------------------");
         System.out.println("Marca.: ");
         setMarca(sc.nextLine());
         System.out.println("Modelo.: ");
@@ -75,7 +76,7 @@ public class PlacaMae {
         setTipoProcessador(sc.nextLine());
         System.out.println("Preço.: ");
         setPreco(Integer.parseInt(sc.nextLine()));
-        sc.close();
+        //sc.close();
     }
     
     public void cadastrar(String marca, String modelo, String tipoProcessador,
@@ -87,6 +88,7 @@ public class PlacaMae {
     }
     
     public void imprimir(){
+        System.out.println("-------------------Placa Mãe---------------------");
         System.out.println("Marca.: " + getMarca());
         System.out.println("Modelo.: " + getModelo()); 
         System.out.println("Tipo de Processador.: " + getTiPoProcessador());

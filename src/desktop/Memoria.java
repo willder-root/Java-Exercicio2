@@ -96,6 +96,7 @@ public class Memoria {
     
     public void entradaDados(){
         Scanner entrada4 = new Scanner(System.in);
+        System.out.println("-------------------Memoria---------------------");
         System.out.println("Marca.: ");
         setMarca(entrada4.nextLine());
         System.out.println("Modelo.: ");
@@ -106,10 +107,11 @@ public class Memoria {
         setPreco(Double.parseDouble(entrada4.nextLine()));
         System.out.println("Capacidade.: ");
         setCapacidade(Integer.parseInt(entrada4.nextLine()));
-        entrada4.close();
+        //entrada4.close();
     }
     
     public void imprimir(){
+        System.out.println("-------------------Memoria---------------------");
         System.out.println("Marca.: " + getMarca());
         System.out.println("Modelo.: " + getModelo());
         System.out.println("Tipo.: "+ getTipo());

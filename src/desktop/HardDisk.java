@@ -94,6 +94,7 @@ public class HardDisk {
      
      public void entradaDados(){
         Scanner entrada2 = new Scanner(System.in);
+        System.out.println("-------------------Hard Disk---------------------");
         System.out.print("Marca.: ");
         setMarca(entrada2.nextLine());
         System.out.print("Modelo.: ");
@@ -104,10 +105,11 @@ public class HardDisk {
         setCapacidade(Integer.parseInt(entrada2.nextLine()));
         System.out.print("Preco.: ");
         setPreco(Double.parseDouble(entrada2.nextLine()));
-        entrada2.close();
+        //entrada2.close();
      }
      
      public void imprimir(){
+         System.out.println("-------------------Hard Disk---------------------");
          System.out.println("Marca.: " +getMarca());
          System.out.println("Modelo.: " +getModelo());
          System.out.println("Tipo.: " +getTipo());
